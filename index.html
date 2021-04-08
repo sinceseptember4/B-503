@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>SINSESEPTEMBER4</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div id="wrapper">
+    <header class="header">
+    <div class="box">
+      <h1 class=title>sinceseptember4</h1>
+        <div class="hamburger" id="open_nav">
+            <img src="hamburger.png" alt="">
+        </div>
+</div>
+    </header>
+   <video width="200px" height="133px" autoplay muted playsinline src="image/video.mp4"></video>
+   </div>
+   
+     
+  <nav id="nav">
+    <div class="logo"><img src="logo.svg" alt=""></div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">今月の特集</a></li>
+        <li><a href="#">ホテル検索</a></li>
+        <li><a href="#">カフェ検索</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+    </ul>
+</nav>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $('#open_nav').on('click', function() {
+        $('#wrapper, #nav').toggleClass('show');
+    });
+});
+    
+    </script>
   </body>
+
 </html>
