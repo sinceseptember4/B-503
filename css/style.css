@@ -12,7 +12,25 @@ body {
     height: 100px;
     background-color: black;
     }
-    
+
+.centering_item{
+
+}
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    }
+.space {
+    height: 100px
+    }
+.img{
+    width: 1000px;
+    margin:  0 200px; 
+    }
+.helow{
+    whight: 1000px;
+    height: 300px;
+    margin:  0 200px; }
 .box{
     display:flex;
     overflow: hidden;
