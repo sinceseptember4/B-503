@@ -145,9 +145,6 @@ main .container {
 }
 
 
-
-
-
 .slide {
     margin : 0 auto;
     border: 1px solid black;
@@ -156,19 +153,11 @@ main .container {
 }
 img {
     max-width: 100%;
-    margin: 0 auto;
-    display: block;
 }
 .toolbar {
     overflow: hidden;
     text-align: center;
 }
-.image_box{
-    background-color: white;
-    }
-#main_image{
-    margin: 0 auto;
-    }
 .nav {
     display: flex;
     justify-content: center;
@@ -179,13 +168,13 @@ img {
     margin-right: 0.5rem;
     width: 16px;
     height: 16px;
-    background: url(images/arrow-left.svg) no-repeat;
+    background: url(image/arrow-left.svg) no-repeat;
 }
 #next {
     margin-left: 0.5rem;
     width: 16px;
     height: 16px;
-    background: url(images/arrow-right.svg) no-repeat;
+    background: url(image/arrow-right.svg) no-repeat;
 }
 #page {
     color: white;
