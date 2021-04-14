@@ -166,15 +166,13 @@ img {
 }
 #prev {
     margin-right: 0.5rem;
-    width: 16px;
-    height: 16px;
-    background: url(image/arrow-left.svg) no-repeat;
+    width: 20px;
+    height: auto;
 }
 #next {
     margin-left: 0.5rem;
-    width: 16px;
-    height: 16px;
-    background: url(image/arrow-right.svg) no-repeat;
+    width: 20px;
+    height: auto;
 }
 #page {
     color: white;

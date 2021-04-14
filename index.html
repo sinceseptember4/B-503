@@ -2,12 +2,16 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SINSESEPTEMBER4</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/special.css">
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/spcial.js"></script>
+    <link href="../../_common/images/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+    <link href="../../_common/css/style.css" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -33,8 +37,10 @@
         </div>
         <div class="toolbar">
             <div class="nav">
-      
+                <img src="image/Arrow-left.jpg"id="prev">
                 <div id="page"></div>
+                <img src="image/Arrow-right.jpg"id="next">
+
             
             </div>
         </div>
@@ -69,7 +75,41 @@
         <li><a href="#">お問い合わせ</a></li>
     </ul>
 </nav>
+<script>
+'use strict';
 
+const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg', 'image/image5.jpg'];
+images.forEach(function(item, index) {
+    preloadImage(item);
+});
+let current = 0;
+
+function changeImage(num) {
+    if(current + num >= 0 && current + num < images.length) {
+        current += num;
+        document.getElementById('main_image').src = images[current];
+        pageNum();
+    }
+};
+
+function pageNum() {
+    document.getElementById('page').textContent = `${current + 1}/${images.length}`;
+}
+
+function preloadImage(path) {
+    let imgTag = document.createElement('img');
+    imgTag.src = path;
+}
+
+pageNum();
+
+document.getElementById('prev').onclick = function() {
+    changeImage(-1);
+};
+document.getElementById('next').onclick = function() {
+    changeImage(1);
+};
+</script>
   </body>
 
 </html>

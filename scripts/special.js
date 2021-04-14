@@ -1,5 +1,6 @@
 'use strict';
-const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg', 'image/image5.jpg'];
+
+const images = ['images/image1.jpg', 'images/image2.jpg', 'images/image3.jpg', 'images/image4.jpg', 'images/image5.jpg'];
 images.forEach(function(item, index) {
     preloadImage(item);
 });
