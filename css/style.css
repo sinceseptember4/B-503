@@ -1,8 +1,9 @@
 body {
     margin: 0;
     }
+
     
-.header{
+header{
 
   top:0;
   margin:0;
@@ -12,6 +13,21 @@ body {
     height: 100px;
     background-color: black;
     }
+
+footer{
+    }
+.background{
+     background-image: linear-gradient(#6900E0, #7CCCFA, #FAE201);
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(#6900E0, #7CCCFA, #FAE201);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+     }
 
 .centering_item{
 
@@ -39,7 +55,7 @@ body {
 .title{
     margin: 26px 26px;
     color: white;
-   
+   font-family: 'Raleway', sans-serif;
     width: 300px
     }
 .img2{
@@ -153,7 +169,10 @@ main .container {
 }
 img {
     max-width: 100%;
+        margin: 0 auto;
+    display: block;
 }
+
 .toolbar {
     overflow: hidden;
     text-align: center;
@@ -177,3 +196,4 @@ img {
 #page {
     color: white;
 }
+

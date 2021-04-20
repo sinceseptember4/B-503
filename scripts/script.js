@@ -15,7 +15,7 @@ function success(pos) {
     const lng = pos.coords.longitude;
     const accuracy = pos.coords.accuracy;
 
-    $('#loc').text(`緯度：${lat} 経度：${lng}`);
+    $('#loc').text(`latitude：${lat} longitude：${lng}`);
     $('#accuracy').text(accuracy);
 }
 
@@ -87,3 +87,4 @@ function ajaxRequest(lat, long) {
         console.log('$.ajax failed!');
     })
 }
+

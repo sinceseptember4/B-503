@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/special.css">
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/spcial.js"></script>
+    <script src="scripts/special.js"></script>
     <link href="../../_common/images/favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-    <link href="../../_common/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="background"></div>
     <div id="wrapper">
       <header class="header">
       <div class="box">
@@ -46,9 +48,9 @@
         </div>
       </div>
       <section>
-        <p>あなたはいま</p>
+        <p>Position information output</p>
         <p id="loc" class="position"></p>
-        <p>の場所にいます。ちなみに精度は半径 <span id="accuracy" class="position"></span> mです。</p>
+        <p>Error range <span id="accuracy" class="position"></span> m</p>
       </section>
       
       <div class="container">
@@ -67,6 +69,7 @@
     
   <nav id="nav">
     <div class="logo"><img src="logo.svg" alt=""></div>
+    最終アクセス日時：<span id="time"></span>
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">今月の特集</a></li>
@@ -75,10 +78,14 @@
         <li><a href="#">お問い合わせ</a></li>
     </ul>
 </nav>
+  </body>
+  <footer class= footer>
+    <h2>sinceseptember4@gmail.com</h2>
+  </footer>
 <script>
 'use strict';
 
-const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg', 'image/image5.jpg'];
+const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg'];
 images.forEach(function(item, index) {
     preloadImage(item);
 });
@@ -109,7 +116,6 @@ document.getElementById('prev').onclick = function() {
 document.getElementById('next').onclick = function() {
     changeImage(1);
 };
-</script>
-  </body>
 
+</script>
 </html>
