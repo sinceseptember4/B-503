@@ -36,6 +36,20 @@ footer{
   z-index:-1;
      }
 
+.box {
+    display:flex;
+    overflow: hidden;
+    width:100%;
+     vertical-align: middle;
+    }
+.title{
+    margin: 26px 26px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    width: 300px
+    }
+    
+
 .centering_item{
 
 }
@@ -43,30 +57,31 @@ footer{
     }
 
 .img{
+ 
+    }
+
+.outline{
+    position: absolute;
     width: 1000px;
+    height: auto;
     margin:  0 auto; 
     display: block;
+    position: relative;
     }
+.outline h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+
 .helow{
     width: 1000px;
     height: 300px;
     margin:  0 200px; 
-       font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     }
-.box{
-    display:flex;
-    overflow: hidden;
-    width:100%;
-    height:100px;
-     vertical-align: middle;
-    }
-.title{
-    margin: 26px 26px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-
-    width: 300px
-    }
+    
 .img2{
     width: 1000px;
     margin:  0 auto; 
