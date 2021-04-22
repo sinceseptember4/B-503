@@ -6,12 +6,17 @@ main .container {
 }
 #place {
     text-align: center;
+    color: white;
 }
 #now {
     margin: 0 auto;
     border: 1px solid #ccc;
     max-width: 400px;
     min-height: 400px;
+         background-color:rgba(255,255,255,.8);
+  border-radius: 10px;
+  text-align:center;
+        display: block;
 }
 #now .icon img {
     width: 400px;
@@ -27,8 +32,11 @@ main .container {
 }
 #forecast {
     border-collapse: collapse;
-    margin: 2rem auto 0;
+    margin: 2rem auto 30px;
     width: 400px;
+    background-color:rgba(255,255,255,.8);
+    text-align:center;
+ 
 }
 #forecast th, #forecast td {
     border-top: 1px solid #ccc;
