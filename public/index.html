@@ -27,11 +27,13 @@
       <div class="space"></div>
       <div class="outline">
         <img class="img"src="image/image.jpg">
-        <h1 class="welcome">Welcome</h1>
+        <h1 class="fade-in">Welcome</h1>
       </div>
-      <div class="helow">
+      <div class="hellow">
+      　<div class= "margin">
         <h1>Hellow World!</h1>
         <h2>My name is "SINCESEPTEMBER4"</h2>
+         </div>
       </div>
       <img class="img2" src="image/Laferrari.jpg">
       <div class="slide">
@@ -48,9 +50,11 @@
         </div>
       </div>
       <div class="position">
+    　<div class= "margin">
         <p>Position information output</p>
         <p id="loc" ></p>
         <p>Error range <span id="accuracy" ></span> m</p>
+      </div>
       </div>
       
       <div class="container">
@@ -83,6 +87,17 @@
   </footer>
 <script>
 'use strict';
+const CLASSNAME = "-visible";
+const TIMEOUT = 2000;
+const $target = $(".bg");
+
+setInterval(() => {
+  $target.addClass(CLASSNAME);
+
+  setTimeout(() => {
+    $target.removeClass(CLASSNAME);
+  }, TIMEOUT);
+}, TIMEOUT*2);
 
 const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg'];
 images.forEach(function(item, index) {
