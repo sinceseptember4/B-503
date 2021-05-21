@@ -6,7 +6,7 @@
 });
     
 
-// geolocation
+
 navigator.geolocation.getCurrentPosition(success, fail);
 
 function success(pos) {
@@ -20,15 +20,14 @@ function success(pos) {
 }
 
 function fail(error) {
-    alert('位置情報の取得に失敗しました。エラーコード：' + error.code);
+    alert('Failed to get the location information.Error code：' + error.code);
 }
 
-// UTCをミリ秒に
+
 function utcToJSTime(utcTime) {
     return utcTime * 1000;
 }
 
-// データ取得
 function ajaxRequest(lat, long) {
     const url = 'https://api.openweathermap.org/data/2.5/forecast';
     const appId = 'f0085f043802580d14205b92e34129e1';
@@ -44,10 +43,8 @@ function ajaxRequest(lat, long) {
         }
     })
     .done(function(data){
-        // 都市名、国名
         $('#place').text(data.city.name + ', ' + data.city.country);
 
-        // 天気予報データ
         data.list.forEach(function(forecast, index) {
             const dateTime = new Date(utcToJSTime(forecast.dt));
             const month = dateTime.getMonth() + 1;
@@ -58,7 +55,6 @@ function ajaxRequest(lat, long) {
             const description = forecast.weather[0].description;
             const iconPath = `images/${forecast.weather[0].icon}.svg`;
 
-            // 現在の天気とそれ以外で出力を変える
             if(index === 0) {
                 const currentWeather = `
                 <div class="icon"><img src="${iconPath}"></div>

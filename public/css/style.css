@@ -1,10 +1,7 @@
 body {
     margin: 0;
     }
-
-    
 header{
-
     top:0;
     margin:0;
     padding:4px;
@@ -17,22 +14,54 @@ footer{
     width:100%;
     height: 100px;
     background-color: black;
-    padding: 10px 10px
- 
+    position: relative;
     }
 img {
     max-width: 100%;
     margin: 0 auto;
     display: block;
+ 
 }
+.img2{
+       position: relative;
+    }
+.fade-in-img2{
+      color: white;
+    display: block;
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    
+　opacity:0;
+  animation-name:sample02;
+  animation-duration:5s; 
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+    }
 .margin{
-    margin-left: auto;
-    margin-right: auto;
+        margin: 0 auto;
+    text-align: center;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
 }
 .footer{
     color: white;
     display: block;
     margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
     }
 .background{
   animation:slide 3s ease-in-out infinite alternate;
@@ -62,6 +91,8 @@ img {
 
 .fade-in{ 
   margin: 400px 0 0 0 ;
+    top: 0;
+    left: 0;
   color: white;
   font-size:40px;
 　opacity:0;
@@ -96,8 +127,7 @@ img {
     }
 .outline h1{
     position: absolute;
-    top: 0;
-    left: 0;
+
     }
 
 
@@ -107,10 +137,11 @@ img {
     margin:  30px auto; 
     padding: auto;
     font-family: 'Raleway', sans-serif;
-    background-color:rgba(255,255,255,.8);
+    background-color:rgba(255,255,255,.6);
     border-radius: 10px;
     text-align:center;
     display: block;
+    position: relative;
     }
 
 .img2{
@@ -118,8 +149,7 @@ img {
     margin:  0 auto; 
     display: block;
     }
-.slide{
-}
+
 .position{
    width: 1000px;
     height: 300px;
@@ -127,9 +157,9 @@ img {
     background-color:rgba(255,255,255,.8);
     border-radius: 10px;
     display: block;
-    vertical-align: middle;
-      text-align: center;
-        }
+     text-align: center;
+     position: relative;
+    }
 #nav {
     position: fixed;
     right: -270px;
@@ -138,12 +168,12 @@ img {
     height: 100%;
 }
 
-/* ドロワーが開かれたときのスタイル */
+
 .show {
     transform: translate3d(-270px, 0, 0);
 }
 
-/* 開く・閉じるアニメーション */
+
 #wrapper, #nav {
     transition: transform 0.3s;
 }
@@ -153,10 +183,6 @@ img {
      margin:  18px 18px 18px auto;
      }
      
-
-/* ===== 装飾的なCSS ===== */
-
-/* メニュー */
 #nav {
     padding: 24px 24px 0 24px;
     background: #000;

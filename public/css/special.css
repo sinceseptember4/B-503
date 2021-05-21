@@ -70,7 +70,7 @@ main .container {
     background-size: 24px 24px;   
 }
 
-/*　ローディングサイン　*/
+
 #now {
     background-image: url(public/images/loading.gif);
     background-repeat: no-repeat;
