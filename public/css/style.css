@@ -1,4 +1,5 @@
 body {
+     width:100%;
     margin: 0;
     }
 header{
@@ -87,8 +88,24 @@ img {
     font-family: 'Oswald', sans-serif;
     width: 300px
     }
-    
+.mobile-menu-icon {
+    background-color: transparent;
+    border:none;
+        }
+.mobile-menu-icon > span {
+    background-color: white;
+    width: 35px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+    }
+.mobile-menu-icon > span:last-child {
+  margin-bottom: 0;
+}
 
+.menu-open .mobile-menu-icon > span:nth-child(1) {
+    transform: translateY(11px) rotate(135deg);
+}
 .fade-in{ 
   margin: 400px 0 0 0 ;
     top: 0;
