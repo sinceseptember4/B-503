@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   </head>
-  <body background="image/Pentagon.jpeg" bgproperties="fixed">
+  <body  bgproperties="fixed">
   <div id="global-container">
   <div class="background"></div>
     <div id="wrapper">
@@ -28,55 +28,56 @@
           </buttom>
       </div>
       </header>
-      <div class="space"></div>
-      <div class="outline">
-        <img class="img"src="image/image.jpg">
-        <h1 class="fade-in">Welcome</h1>
-      </div>
-      <div class="hellow">
-      　<div class= "margin">
-        <h1>Hellow World!</h1>
-        <h2>My name is "SINCESEPTEMBER4"</h2>
-         </div>
-      </div>
-      <div class="outline">
-      <img class="img2" src="image/Laferrari.jpg">
-      <h1 class="fade-in-img2">-MY SKILLS-</h1>
-      </div>
-      
-      <div class="slide">
-        <div class="image_box">
-            <img id="main_image" src="image/image1.jpg">
-        </div>
-        <div class="toolbar">
-            <div class="nav">
-                <img src="image/Arrow-left.jpg"id="prev">
-                <div id="page"></div>
-                <img src="image/Arrow-right.jpg"id="next">
+      <div id="container">
+            <div class="outline">
+              <img class="img"src="image/image.jpg">
+              <h1 class="fade-in">Welcome</h1>
             </div>
-        </div>
+            <div class="hellow">
+              　<div class= "margin">
+              　 <div class="move">
+                   <h1>Hellow World!</h1>
+                    <h2>My name is "SINCESEPTEMBER4"</h2>
+                 </div>
+                </div>
+            </div>
+            <div class="outline2">
+            <img class="img2" src="image/Laferrari.jpg">
+            <h1 class="fade-in-img2">-MY SKILLS-</h1>
+            </div>
+            
+            <div class="slide">
+              <div class="image_box">
+                  <img id="main_image" src="image/image1.jpg">
+              </div>
+              <div class="toolbar">
+                  <div class="nav">
+                      <img src="image/Arrow-left.jpg"id="prev">
+                      <div id="page"></div>
+                      <img src="image/Arrow-right.jpg"id="next">
+                  </div>
+              </div>
+            </div>
+            <div class="position">
+          　<div class= "margin">
+              <p>Position information output</p>
+              <p id="loc" ></p>
+              <p>Error range <span id="accuracy" ></span> m</p>
+            </div>
+            </div>
+            
+            <div class="container">
+          <section>
+            <h3 id="place"></h3>
+              <div  id="now">
+                <div id="weather">
+                </div>
+              </div>
+              <table id="forecast">
+              </table>
+          </section>
       </div>
-      <div class="position">
-    　<div class= "margin">
-        <p>Position information output</p>
-        <p id="loc" ></p>
-        <p>Error range <span id="accuracy" ></span> m</p>
-      </div>
-      </div>
-      
-      <div class="container">
-    <section>
-      <h3 id="place"></h3>
-        <div  id="now">
-          <div id="weather">
-          </div>
-        </div>
-        <table id="forecast">
-        </table>
-    </section>
-</div>
-   </div>
-   
+    </div>
     
   <nav id="nav">
       <p>最終アクセス日時：<span id="time"></span></p>
@@ -94,53 +95,6 @@
     <h2 class="footer">sinceseptember4@gmail.com</h2>
   </footer>
 
-    <script>
-    'use strict';
-const CLASSNAME = "-visible";
-const TIMEOUT = 2000;
-const $target = $(".bg");
-
-setInterval(() => {
-  $target.addClass(CLASSNAME);
-
-  setTimeout(() => {
-    $target.removeClass(CLASSNAME);
-  }, TIMEOUT);
-}, TIMEOUT*2);
-
-const images = ['image/image1.jpg', 'image/image2.jpg', 'image/image3.jpg', 'image/image4.jpg'];
-images.forEach(function(item, index) {
-    preloadImage(item);
-});
-let current = 0;
-
-function changeImage(num) {
-    if(current + num >= 0 && current + num < images.length) {
-        current += num;
-        document.getElementById('main_image').src = images[current];
-        pageNum();
-    }
-};
-
-function pageNum() {
-    document.getElementById('page').textContent = `${current + 1}/${images.length}`;
-}
-
-function preloadImage(path) {
-    let imgTag = document.createElement('img');
-    imgTag.src = path;
-}
-
-pageNum();
-
-document.getElementById('prev').onclick = function() {
-    changeImage(-1);
-};
-document.getElementById('next').onclick = function() {
-    changeImage(1);
-};
-
-    </script>
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/script.js"></script>

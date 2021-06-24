@@ -7,13 +7,10 @@
   visibility: hidden;
 }
 
-
 .pace {
-	width: 140px;
-	height: 300px;
+	width: 70px;
+	height: 150px;
 	position: fixed;
-	top: -90px;
-	right: -20px;
 	z-index: 2000;
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
@@ -23,7 +20,11 @@
 	opacity: 0;
 	-webkit-transition: all 2s linear 0s;
 	-moz-transition: all 2s linear 0s;
-	transition: all 2s linear 0s;
+	transition: all .5s linear 0s;
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .pace.pace-active {
@@ -33,6 +34,7 @@
 	-o-transform: scale(.25);
 	transform: scale(.25);
 	opacity: 1;
+	transform: translate(-50%, -50%)
 }
 
 .pace .pace-activity {
