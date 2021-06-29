@@ -26,11 +26,11 @@ img {
 
 #container {
     margin: 30px auto;
-    }
-    
+}
+
 
 .fade-in-img2{
-      color: white;
+    color: white;
     display: block;
     vertical-align: middle;
     margin: 0;
@@ -38,12 +38,11 @@ img {
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
-    
-　opacity:0;
-  animation-name:sample02;
-  animation-duration:5s; 
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
+    opacity:0;
+    animation-name:sample02;
+    animation-duration:5s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
     }
 .margin{
     position: absolute;
@@ -59,7 +58,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
             opacity: 1;
             transform: translateY(0px);
             }
-    }
+}
 .footer{
     color: white;
     display: block;
@@ -72,8 +71,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-
-    }
+}
   
 .background{
     background-image: url(image/Pentagon.jpeg);
@@ -86,19 +84,19 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
   right:-50%;
   top:0;
   z-index:-1;
-     }
+ }
 .box {
     display:flex;
     justify-content: space-between;
     align-items: center;
+ }
 
-    }
 .title{
     margin: 26px 26px;
     color: white;
     font-family: 'Oswald', sans-serif;
     width: 300px
-    }
+}
 
 .mobile-menu-icon {
     font-size: 1.5px;
@@ -148,19 +146,20 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     display: block;
     position: relative;
 
-    }
-    .fade-in{
-    position: absolute;
-    top: 82%;
-    left: 7%;
-    color: white;
-    overflow: hidden;
-    transform: translate(-150%,0%);
-    transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
+}
+.fade-in{
+position: absolute;
+top: 82%;
+left: 7%;
+color: white;
+overflow: hidden;
+transform: translate(-150%,0%);
+transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     &.inview {
         transform: translate(0%,0%);
-        }
     }
+}
+
 .hellow{
     width: 1000px;
     height: 300px;
@@ -172,7 +171,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     text-align:center;
     display: block;
     position: relative;
-    }
+}
     
 .outline2 {
     position: relative;
@@ -196,7 +195,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
         left: 50%;
         transform: translate(-50%, -50%)
         }
-    }
+}
 
 .position{
    width: 1000px;
@@ -207,7 +206,8 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     display: block;
      text-align: center;
      position: relative;
-    }
+}
+
 #nav {
     position: fixed;
     right: -270px;
