@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     } 　
 
-    const so = new ScrollObserver('.fade-in , .move,.img2 ,.fade-in-img2', cb);
+    const so = new ScrollObserver(' .fade-in , .move,.img2 ,.fade-in-img2 ,.cover-slide', cb);
     
     
     const CLASSNAME = "-visible";
