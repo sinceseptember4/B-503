@@ -28,22 +28,6 @@ img {
     margin: 30px auto;
 }
 
-
-.fade-in-img2{
-    color: white;
-    display: block;
-
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    opacity:0;
-    animation-name:sample02;
-    animation-duration:5s; 
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    }
 .margin{
     position: absolute;
     top: 50%;
@@ -173,31 +157,21 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     margin:  0 auto; 
         
     .cover-slide {
-        &::after {
+        
             content: '';
             position: absolute;
             z-index: 2;
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 100%;
             background-color: #0e3e4d;
-        }
+        
     
             &.inview {
-                &::after {
-                    animation:slide 3s ease-in-out infinite alternate;
-                }
+                animation:slide 3s ease-in-out none;
             }
-        & img{
-        width: 100%;
-        display: block;
-        position: relative;
-        transition: transform 0.3s ease;
-            &:hover {
-              transform: scale(1.05);
-            }
-        }
+        
         
 
         @keyframes slide {
@@ -214,14 +188,59 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
                 bottom: 100%;
             }
         }
-    
-         & h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+
+        @keyframes show {
+            0%{
+                opacity: 0;
+            }
+            51%{
+                opacity: 1;
+                transform: scale(1.5);
+
+            }
+            100%{
+                opacity: 1;
+            }
+
         }
+
+
+    h1{
+
     }
+}
+
+.img2{
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+        &.inview {
+            animation: show 3s ease-in-out none;
+        }
+        &:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+    }       
+    
+}
+.fade-in-img2{
+    color: white;
+    display: block;
+    z-index: 3;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: opacity 0.3s ease 3s, transform 0.3s ease 1s;
+ 
+        &.inview {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
 }
 
 .position{
