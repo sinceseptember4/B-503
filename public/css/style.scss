@@ -193,6 +193,9 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
             0%{
                 opacity: 0;
             }
+            50%{
+                opacity: 0;
+            }
             51%{
                 opacity: 1;
                 transform: scale(1.5);
@@ -203,10 +206,6 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
             }
 
         }
-
-
-    h1{
-
     }
 }
 
@@ -214,16 +213,34 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     display: block;
     position: relative;
     transition: transform 0.3s ease;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        pointer-events: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        &:hover {
+            
+        }
+    }
         &.inview {
             animation: show 3s ease-in-out none;
         }
         &:hover {
             transform: scale(1.05);
             opacity: 1;
+            
         }
-    }       
+        
+           
     
 }
+
 .fade-in-img2{
     color: white;
     display: block;
@@ -379,4 +396,3 @@ main .container {
 #page {
     color: white;
 }
-
