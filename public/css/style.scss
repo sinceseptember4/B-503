@@ -8,6 +8,7 @@ header{
     padding:4px;
     width:100%;
     height: 100px;
+    z-index: 1;
     background-color: black;
     }
 
@@ -58,11 +59,20 @@ img {
 }
   
 .background{
+    display: block;
     position: absolute;
     background-image: url(image/Pentagon.jpeg);
-    width: 1000px;
-    height: 100%;
-    z-index: 0;
+    background-color: #114d60;
+    width: 100%;
+    height: 4994px;
+    z-index: -10;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 4994px;
+            color: #000;
+            z-index: -9;
+        }
 }
 .box {
     display:flex;
@@ -225,12 +235,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
         z-index: 10;
         transition: background-color 0.3s ease;
         pointer-events: none;
-        @include animation(
-          $name: kf-img-show,
-          $duration: 1.6s,
-          $timing-function: ease-in-out,
-          $fill-mode: none
-        );
+
       }
       &:hover::before {
         background-color: rgba(0, 0, 0, 0.4);
@@ -249,28 +254,6 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     
 }
 
-.hover-darken {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition: background-color 0.3s ease;
-      pointer-events: none;
-      @include animation(
-        $name: kf-img-show,
-        $duration: 1.6s,
-        $timing-function: ease-in-out,
-        $fill-mode: none
-      );
-    }
-    &:hover::before {
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-}
 
 .fade-in-img2{
     color: white;
