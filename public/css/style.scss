@@ -43,7 +43,8 @@ img {
     animation-duration:5s; 
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    }
+    
+}
 .margin{
     position: absolute;
     top: 50%;
@@ -52,12 +53,12 @@ img {
 }
 .move {
     transform: translateY(20px);
-transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
-  opacity: 0;
+    transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
+    opacity: 0;
         &.inview {
             opacity: 1;
             transform: translateY(0px);
-            }
+        }
 }
 .footer{
     color: white;
@@ -172,7 +173,7 @@ transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     display: block;
     position: relative;
 }
-    
+
 .outline2 {
     position: relative;
     overflow: hidden;
