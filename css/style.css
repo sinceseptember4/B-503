@@ -188,6 +188,7 @@ img {
   overflow: hidden;
   -webkit-transform: translate(-150%, 0%);
           transform: translate(-150%, 0%);
+  opacity: 0;
   -webkit-transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
   transition: opacity 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
   transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
@@ -197,6 +198,7 @@ img {
 .fade-in.inview {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+  opacity: 1;
 }
 
 .hellow {

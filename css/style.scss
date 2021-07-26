@@ -161,9 +161,11 @@ left: 7%;
 color: white;
 overflow: hidden;
 transform: translate(-150%,0%);
+opacity: 0;
 transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
     &.inview {
         transform: translate(0%,0%);
+        opacity: 1;
     }
 }
 
