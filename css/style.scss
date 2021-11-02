@@ -1,5 +1,5 @@
 body {
-     width:100%;
+    width:100% !important;
     margin: 0;
     }
 header{
@@ -446,4 +446,35 @@ main .container {
 }
 #page {
     color: white;
+}
+
+
+@media(max-width: 1000px) {
+    .outline{ 
+        width: 100%;
+    }
+    .hellow {
+        width: 100%;
+    }
+    .outline2 {
+        width: 100%;
+    }
+    .slide {
+        width: 100%;
+    }
+    .position {
+        width: 100%;
+    }
+    #main_image {
+
+    }
+
+}
+
+@media(max-width: 700px) {
+
+    #main_image {
+        height: 100%;
+    }
+
 }
